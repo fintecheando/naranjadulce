@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: Desarrollo de Sistemas Nibble
+Specification-Title: nibblefs
+Specification-Version: 1.0
+Specification-Vendor: Desarrollo de Sistemas Nibble
+Implementation-Title: nibblefs
+Implementation-Version: 1.0
+Implementation-Vendor: Desarrollo de Sistemas Nibble
+

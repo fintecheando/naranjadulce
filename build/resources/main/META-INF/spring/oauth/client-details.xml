@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                      http://www.springframework.org/schema/beans/spring-beans.xsd
+					  http://www.springframework.org/schema/security/oauth2
+					  http://www.springframework.org/schema/security/spring-security-oauth2.xsd
+					  http://www.springframework.org/schema/context
+					  http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <oauth:client-details-service id="client-details-service">
+
+        <!-- Our Official Application -->
+        <oauth:client
+                client-id="353b302c44574f565045687e534e7d6a"
+                secret="286924697e615a672a646a493545646c"
+                authorized-grant-types="password,refresh_token"
+                authorities="ROLE_USER"
+                access-token-validity="604800"
+                refresh-token-validity="604800"
+                scope="read,write"
+                />
+
+        <!-- An accepted third party application -->
+        <oauth:client
+                client-id="173a73b18a8534b41f471h23d123e33a"
+                secret="286924697e615a672a646a493545646c"
+                authorized-grant-types="password,refresh_token"
+                authorities="ROLE_READ_ONLY"
+                access-token-validity="604800"
+                refresh-token-validity="604800"
+                scope="read"
+                />
+                
+    </oauth:client-details-service>
+
+</beans>

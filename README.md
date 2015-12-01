@@ -1,6 +1,14 @@
 # naranjadulce
 Back End Food Services
 
+Oracle Java 8
+Hibernate 5 (OGM)
+Wildfly 10
+Spring MVC
+CouchDB
+
+
+
 1. Download Wildfly 9/10 from http://wildfly.org/downloads/
 
 2. Extract it and then start it
